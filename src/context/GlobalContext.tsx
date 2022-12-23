@@ -7,8 +7,8 @@ type GlobalContextType = {
 }
 
 const GlobalContext = createContext<GlobalContextType>({
-	count: 0,
-	setCount: () => {},
+    count: 0,
+    setCount: () => {},
 });
 
 export default GlobalContext;

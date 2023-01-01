@@ -5,25 +5,25 @@ import GlobalContextProvider from './context/GlobalContextProvider';
 import useUser from './hooks/useUser';
 
 type Props = {
-	redirectTo: string;
+    redirectTo: string;
 };
 
 function ProtectedRoutes({ redirectTo }: Props) {
-	const { token } = useUser();
+    const { token } = useUser();
 
-	return token ? <Outlet /> : <Navigate to={redirectTo} />;
+    return token ? <Outlet /> : <Navigate to={redirectTo} />;
 }
 
 export default function MainRoutes() {
-	return (
-		<GlobalContextProvider>
-			<Routes>
-				<Route path="/" element={<h1>SignIn</h1>} />
-				<Route element={<ProtectedRoutes redirectTo="/" />}>
-				<Route path="/main" element={<Main />} />
-				</Route>
-				<Route path="*" element={<h1> 404 - Not found </h1>} />
-			</Routes>
-		</GlobalContextProvider>
-	);
+    return (
+        <GlobalContextProvider>
+            <Routes>
+                <Route path="/" element={<h1>SignIn</h1>} />
+                <Route element={<ProtectedRoutes redirectTo="/" />}>
+                    <Route path="/main" element={<Main />} />
+                </Route>
+                <Route path="*" element={<h1> 404 - Not found </h1>} />
+            </Routes>
+        </GlobalContextProvider>
+    );
 }

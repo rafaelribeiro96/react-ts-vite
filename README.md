@@ -14,8 +14,8 @@ O projeto "React TS Boilerplate" é uma aplicação em React que fornece um ambi
 
 1. Clone o repositório do projeto: `git clone https://github.com/seu-usuario/react-ts-boilerplate.git`
 2. Entre na pasta do projeto: `cd react-ts-boilerplate`
-3. Instale as dependências: `npm install` ou `yarn install`
-4. Inicie o projeto: `npm dev` ou `yarn dev`
+3. Instale as dependências: `npm install` ou `yarn`
+4. Inicie o projeto: `npm run dev` ou `yarn dev`
 5. Abra o navegador e acesse: `http://localhost:3000`
 
 ## Scripts disponíveis

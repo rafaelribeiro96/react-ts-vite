@@ -25,6 +25,3 @@ O projeto "React TS Boilerplate" é uma aplicação em React que fornece um ambi
 - `npm run build` ou `yarn build`: cria a versão de produção da aplicação
 - `npm run lint` ou `yarn lint`: checa se o código segue as regras de estilo definidas pelo ESLint
 
-## Licença
-
-Este projeto está disponível sob a licença MIT. Veja o arquivo [LICENSE](LICENSE) para mais detalhes.
